@@ -1,0 +1,11 @@
+name,reg_function,trainset_acc,testset_acc,r2score,conf_matrx
+logisticReg_basic,Survived = 3.99 + -0.85*Pclass + -0.00*Name + -2.35*Sex + -0.03*Age + -0.32*SibSp + -0.06*Parch + -0.00*Ticket + 0.01*Fare,79.97,failed_evl,0.1696324007807416,"TN: 369, FP: 55, FN: 88, TP: 202"
+linearReg_basic,Survived = 1.40 + -0.19*Pclass + -0.00*Name + -0.49*Sex + -0.01*Age + -0.06*SibSp + -0.01*Parch + -0.00*Ticket + 0.00*Fare,40.25,failed_evl,0.4025252345231439,
+SVC_basic,,99.86,failed_evl,0.9941932335718932,"TN: 424, FP: 0, FN: 1, TP: 289"
+KNC_basic,,82.49,failed_evl,0.2741541964866623,"TN: 356, FP: 68, FN: 57, TP: 233"
+GaussianNB_basic,,78.57,failed_evl,0.11156473649967458,"TN: 352, FP: 72, FN: 81, TP: 209"
+Perceptron_basic,,62.46,failed_evl,-0.5562134027325961,"TN: 417, FP: 7, FN: 261, TP: 29"
+LinearSVC_basic,,49.44,failed_evl,-1.0962426805465193,"TN: 94, FP: 330, FN: 31, TP: 259"
+SGDClassifier_basic,,65.69,failed_evl,-0.422657774886142,"TN: 330, FP: 94, FN: 151, TP: 139"
+DecisionTreeClassifier_basic,,100.0,failed_evl,1.0,"TN: 424, FP: 0, FN: 0, TP: 290"
+RandomForestClassifier_basic,,100.0,failed_evl,1.0,"TN: 424, FP: 0, FN: 0, TP: 290"
