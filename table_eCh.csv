@@ -1,11 +1,31 @@
-name,reg_function,trainset_acc,testset_acc,r2score,conf_matrx
-logisticReg_basic,Survived = 3.99 + -0.85*Pclass + -0.00*Name + -2.35*Sex + -0.03*Age + -0.32*SibSp + -0.06*Parch + -0.00*Ticket + 0.01*Fare,79.97,failed_evl,0.1696324007807416,"TN: 369, FP: 55, FN: 88, TP: 202"
-linearReg_basic,Survived = 1.40 + -0.19*Pclass + -0.00*Name + -0.49*Sex + -0.01*Age + -0.06*SibSp + -0.01*Parch + -0.00*Ticket + 0.00*Fare,40.25,failed_evl,0.4025252345231439,
-SVC_basic,,99.86,failed_evl,0.9941932335718932,"TN: 424, FP: 0, FN: 1, TP: 289"
-KNC_basic,,82.49,failed_evl,0.2741541964866623,"TN: 356, FP: 68, FN: 57, TP: 233"
-GaussianNB_basic,,78.57,failed_evl,0.11156473649967458,"TN: 352, FP: 72, FN: 81, TP: 209"
-Perceptron_basic,,62.46,failed_evl,-0.5562134027325961,"TN: 417, FP: 7, FN: 261, TP: 29"
-LinearSVC_basic,,49.44,failed_evl,-1.0962426805465193,"TN: 94, FP: 330, FN: 31, TP: 259"
-SGDClassifier_basic,,65.69,failed_evl,-0.422657774886142,"TN: 330, FP: 94, FN: 151, TP: 139"
-DecisionTreeClassifier_basic,,100.0,failed_evl,1.0,"TN: 424, FP: 0, FN: 0, TP: 290"
-RandomForestClassifier_basic,,100.0,failed_evl,1.0,"TN: 424, FP: 0, FN: 0, TP: 290"
+name,reg_function,trainset_acc,testset_acc,r2score,conf_matrx,kaggle_acc
+logisticReg_basic,Survived = 3.99 + -0.85*Pclass + -0.00*Name + -2.35*Sex + -0.03*Age + -0.32*SibSp + -0.06*Parch + -0.00*Ticket + 0.01*Fare,79.97,,0.169632400781,"TN: 369, FP: 55, FN: 88, TP: 202",failed_evl
+linearReg_basic,Survived = 1.40 + -0.19*Pclass + -0.00*Name + -0.49*Sex + -0.01*Age + -0.06*SibSp + -0.01*Parch + -0.00*Ticket + 0.00*Fare,40.25,,0.402525234523,,failed_evl
+SVC_basic,,99.86,,0.994193233572,"TN: 424, FP: 0, FN: 1, TP: 289",failed_evl
+KNC_basic,,82.49,,0.274154196487,"TN: 356, FP: 68, FN: 57, TP: 233",failed_evl
+GaussianNB_basic,,78.57,,0.1115647365,"TN: 352, FP: 72, FN: 81, TP: 209",failed_evl
+Perceptron_basic,,62.46,,-0.556213402733,"TN: 417, FP: 7, FN: 261, TP: 29",failed_evl
+LinearSVC_basic,,49.44,,-1.09624268055,"TN: 94, FP: 330, FN: 31, TP: 259",failed_evl
+SGDClassifier_basic,,65.69,,-0.422657774886,"TN: 330, FP: 94, FN: 151, TP: 139",failed_evl
+DecisionTreeClassifier_basic,,100.0,,1.0,"TN: 424, FP: 0, FN: 0, TP: 290",failed_evl
+RandomForestClassifier_basic,,100.0,,1.0,"TN: 424, FP: 0, FN: 0, TP: 290",failed_evl
+logisticReg_basicImputator,Survived = 4.04 + -0.72*Pclass + -0.00*Name + -2.48*Sex + -0.03*Age + -0.29*SibSp + -0.09*Parch + -0.00*Ticket + 0.01*Fare + -0.15*Embarked,80.25,,0.164797238999,"TN: 479, FP: 70, FN: 106, TP: 236",75.120
+linearReg_basicImputator,Survived = 1.37 + -0.15*Pclass + -0.00*Name + -0.51*Sex + -0.01*Age + -0.04*SibSp + -0.02*Parch + -0.00*Ticket + 0.00*Fare + -0.04*Embarked,40.08,,0.400771185732,,failed_evl
+SVC_basicImputator,,99.21,,0.966781708369,"TN: 549, FP: 0, FN: 7, TP: 335",62.679
+LinSVC_basicImputator,,39.28,,-1.56729939603,"TN: 12, FP: 537, FN: 4, TP: 338",63.158
+KN_basicImputator,,82.38,,0.254961173425,"TN: 472, FP: 77, FN: 80, TP: 262",55.502
+Perceptron_basicImputator,,67.45,,-0.376186367558,"TN: 533, FP: 16, FN: 274, TP: 68",65.072
+DecisionTree_basicImputator,,100.0,,1.0,"TN: 549, FP: 0, FN: 0, TP: 342",62.679
+RandomForest_basicImputator,,100.0,,1.0,"TN: 549, FP: 0, FN: 0, TP: 342",75.598
+RandomForest_basicImputator_Title,,100.0,,1.0,"TN: 549, FP: 0, FN: 0, TP: 342",78.469
+DecisionTree_basicImputation_Title_newFun,NA,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",68.9
+GaussianNB_basicImputation_Title_newFun,NA,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",76.08
+KN_basicImputation_Title_newFun,NA,81.74,71.75,0.229570807336,"TN: 360, FP: 50, FN: 72, TP: 186",not_tested
+LinSVC_basicImputation_Title_newFun,NA,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",68.42
+LinearRegr_basicImputation_Title_newFun,Survived = 0.00 + 1.00*Pclass + nan*Sex + nan*Age + nan*SibSp + nan*Parch + nan*Ticket + nan*Fare + nan*Embarked + nan*Title,NA,NA,1.0,NA,not_tested
+LogisticRegr_basicImputation_Title_newFun,Survived = -0.33 + 6.95*Pclass + -0.54*Sex + -1.11*Age + -0.02*SibSp + -0.19*Parch + -0.03*Ticket + -0.00*Fare + 0.00*Embarked + -0.18*Title,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",75.12
+Percep_basicImputation_Title_newFun,NA,66.32,67.71,-0.420873511061,"TN: 393, FP: 17, FN: 208, TP: 50",not_tested
+RandomForest_basicImputation_Title_newFun,NA,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",77.03
+SGD_basicImputation_Title_newFun,NA,62.43,62.33,-0.585063339005,"TN: 405, FP: 5, FN: 246, TP: 12",not_tested
+SVC_basicImputation_Title_newFun,NA,98.2,65.02,0.92422007941,"TN: 410, FP: 0, FN: 12, TP: 246",not_tested
+XGBoost_basicImputation_Title_newFun,NA,100.0,100.0,1.0,"TN: 410, FP: 0, FN: 0, TP: 258",77.51
